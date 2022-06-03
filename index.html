@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" style = "scroll-behavior: smooth;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+		<title>Multivariate Grade Calculator</title>
+		<link rel="icon" href="images/jm.png">
+		<link rel = "stylesheet" href="style.css">
+	</head>
+	<nav class = "navbar">
+		<div class = "max-width">
+			<div class = "logo"><a href="#">Multivariate Grade Calculator</a></div>
+			<ul class = "menu">
+				<li><a href="https://ma562.github.io/joseph_ma/#projects">Go Back</a></li>
+			</ul>
+		</div>
+	</nav>
+	<body>
+		<div class = "top_info">
+			<div class = "vid1">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/IUE8SGPkhz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class = "information">
+				<div class = "text">About</div>
+				The multivariate grade calculator aims to make it easy to evaluate numerous possible combinations in order to achieve a desired grade. The grade thermometer on the right shown in the demo displays the minimum and maximum possible final grade the user will achieve based on what they entered as well as their predicted final score.<br><br>
+				The grading policy used in the demo is as follows:<br>
+				<ul class = "shift">
+					<li>50% — Three exams (all equally weighted)</li>
+					<li>40% — 10 programming assignments (all equally weighted)</li>
+					<li>10% — Mini-project</li>
+				</ul>
+				<br>
+
+				You can try using the multivariate grade calculator <b><a href = "https://ma562.github.io/grade_calculator/" target = "_blank">here</a></b>.<br><br>
+
+				The webpage was written with pure HTML, CSS and JavaScript without the use of any libraries or frameworks which regrettably resulted in many sloc. You may find the source code <b><a href = "https://github.com/ma562/grade_calculator" target = "_blank">here</a></b>.<br><br>
+				An initial version was written in python using File I/O, NumPy and Matplotlib. You may find the source code <b><a href = "https://github.com/ma562/g_calculator_Ver1" target = "_blank">here</a></b>.
+			</div>
+		</div>
+		<br>
+		<div class = "mid_info">
+			<div class = "how_work">
+				<div class = "text">Walking Through the Numbers</div>
+				<p>
+					Using the same grading policy from the about section, assume that the following scores have been entered already.<br>
+					<b>Exam:</b> 82%<Br>
+					<b>Programming assignments (PAs):</b> 80%, 84%, 65%, 70%
+					<br><br>
+					Under <b>PAs information</b><br>
+					<b>Total assessments completed: 4 / 10</b>
+					<ul class = "shift">
+						<li>4 out of 10 total assignments have been done</li>
+					</ul>
+					<b>Current standing: 299.00 / 400 = 74.75%</b>
+					<ul class = "shift">
+						<li>80 + 84 + 65 + 70 = 299</li>
+						<li>Average score so far is 74.75%</li>
+					</ul>
+					<b>Final standing: 299.00 / 400 = 29.90%</b>
+					<ul class = "shift">
+						<li>Final average score if you do not turn in any more PAs</li>
+					</ul>
+					<b>Overall percentage weighting: 40.00%</b>
+					<ul class = "shift">
+						<li>Percent weighting of PAs towards final grade</li>
+					</ul>
+					<b>You had the opportunity to earn: 16.00%</b>
+					<ul class = "shift">
+						<li>With each PA being worth 4%, 4 were completed so far <b>--></b> 4% * 4 = 16%</li>
+					</ul>
+					<b>Secured percentage: 11.96%</b>
+					<ul class = "shift">
+						<li>With each PA being worth 4% <b>--></b> 0.8*4 + 0.84*4 + 0.65*4 + 0.7*4 = 11.96%</li>
+						<li>The percent you gained towards your final grade</li>
+					</ul>
+					<b>Permanent loss: 4.04%</b>
+					<ul class = "shift">
+						<li>16% (possibly earnt) - 11.96% (earnt) = 4.04%</li>
+						<li>The percent you lost so far</li>
+					</ul>
+				</p>
+			</div>
+			<div class = "pic1">
+				<img src = "images/PAs.PNG" class = "pic" width = "100%" alt = "">
+			</div>
+		</div>
+		<br>
+		<div class = "bottom_info">
+			<div class = "how_work2">
+				<div class = "vid2">
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
