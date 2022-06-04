@@ -24,27 +24,27 @@
 				<div class = "text">About</div>
 				The multivariate grade calculator aims to make it easy to evaluate numerous possible combinations in order to achieve a desired grade. The grade thermometer on the right shown in the demo displays the minimum and maximum possible final grade the user will achieve based on what they entered as well as their predicted final score.<br><br>
 				The grading policy used in the demo is as follows:<br>
-				<ul class = "shift">
-					<li>50% — Three exams (all equally weighted)</li>
-					<li>40% — 10 programming assignments (all equally weighted)</li>
-					<li>10% — Mini-project</li>
-				</ul>
+					<ul class = "shift">
+						<li><mark>50% — Three exams (all equally weighted)</mark></li>
+						<li><mark>40% — 10 programming assignments (all equally weighted)</mark></li>
+						<li><mark>10% — Mini-project</mark></li>
+					</ul>
 				<br>
 
 				You can try using the multivariate grade calculator <b><a href = "https://ma562.github.io/grade_calculator/" target = "_blank">here</a></b>.<br><br>
 
-				The webpage was written with pure HTML, CSS and JavaScript without the use of any libraries or frameworks which regrettably resulted in many sloc. You may find the source code <b><a href = "https://github.com/ma562/grade_calculator" target = "_blank">here</a></b>.<br><br>
+				The webpage was written completely from scratch with pure HTML, CSS and JavaScript without the use of any libraries or frameworks which regrettably resulted in many sloc. You may find the source code <b><a href = "https://github.com/ma562/grade_calculator" target = "_blank">here</a></b>.<br><br>
 				An initial version was written in python using File I/O, NumPy and Matplotlib. You may find the source code <b><a href = "https://github.com/ma562/g_calculator_Ver1" target = "_blank">here</a></b>.
 			</div>
 		</div>
 		<br>
 		<div class = "mid_info">
 			<div class = "how_work">
-				<div class = "text">Walking Through the Numbers</div>
+				<div class = "text">Part 1: Course information</div>
 				<p>
-					Using the same grading policy from the about section, assume that the following scores have been entered already.<br>
-					<b>Exam:</b> 82%<Br>
-					<b>Programming assignments (PAs):</b> 80%, 84%, 65%, 70%
+					<b>For Part 1 - 3:</b><br>Using the same grading policy from the about section, assume that the following scores have been entered already.<br>
+					<b>Exam: </b><mark>82%</mark><Br>
+					<b>Programming assignments (PAs):</b> <mark>80%, 84%, 65%, 70%</mark>
 					<br><br>
 					Under <b>PAs information</b><br>
 					<b>Total assessments completed: 4 / 10</b>
@@ -75,7 +75,7 @@
 					</ul>
 					<b>Permanent loss: 4.04%</b>
 					<ul class = "shift">
-						<li>16% (possibly earnt) - 11.96% (earnt) = 4.04%</li>
+						<li>16% (possibly earned) - 11.96% (earned) = 4.04%</li>
 						<li>The percent you lost so far</li>
 					</ul>
 				</p>
@@ -86,10 +86,89 @@
 		</div>
 		<br>
 		<div class = "bottom_info">
+			<div class = "pic2">
+				<img src = "images/analysis.PNG" class = "pic" width = "100%" alt = "">
+			</div>
 			<div class = "how_work2">
-				<div class = "vid2">
-
-				</div>
+				<div class = "text">Part 2: Overall Grade Analysis</div>
+				<p>
+					Under <b>Overall Grade Analysis</b><br>
+					<b>Percent you had the opportunity to earn: 32.67%</b>
+					<ul class = "shift">
+						<li>4 programming assignments have been done worth 4 * 4% = <b>16%</b></li>
+						<li>1 exam done worth <b>16.67%</b></li>
+					</ul>
+					<b>Total secured percent: 25.63%</b>
+					<ul class = "shift">
+						<li><b>11.96%</b> earned from programming assignments</li>
+						<li>0.82 * 16.67% = <b>13.67%</b> earned from exam</li>
+					</ul>
+					<b>Total percent permanently lost: 7.04%</b>
+					<ul class = "shift">
+						<li>16% (possibly earned) - 11.96% (earned) = <b>4.04%</b> from PAs</li>
+						<li>16.67% (possibly earned) - 13.67% (earned) = <b>3%</b> from exam</li>
+					</ul>
+					<b>Current progress and percentage: 78.45%</b>
+					<ul class = "shift">
+						<li>25.63% (earned) / 32.67% (possibly earned) = 78.45%</li>
+					</ul>
+					<b>Highest possible final score: 92.96%</b>
+					<ul class = "shift">
+						<li>100% - 7.04% (total percent permanently lost) = 92.96%</li>
+					</ul>
+				</p>
+				<br>
+				<p>
+					<b>Grade Thermometer:</b><br>
+					<b>MAX</b> how much you can get if you get 100% on rest of work.<br>
+					<b>MIN</b> how much you can get if you get 0% on the rest of work.
+					<ul class = "shift">
+						<li>Remaining exams: 2 <b>--></b> worth 2 * 16.67% = <mark>33.33%</mark></li>
+						<li>Remaining PAs: 6 <b>--></b> worth 6 * 4% = <mark>24%</mark></li>
+						<li>Remaining Mini project: 1 <b>--></b> worth <mark>10%</mark></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<br>
+		<div class = "sliding">
+			<div class = "how_work3">
+				<div class = "text">Part 3: Sliders</div>
+				<b>Case 1:</b><br>
+				The first student, Skye, is confident she can average 95% on the rest of the PAs and get full marks on the mini project. However, she is not confident about exams. Skye wants to aim for a B- in the class.
+				Using the sliders, Skye finds that she will have to average 65% on the rest of the exams to earn a B- in the class.<br><br>
+				<ul class = "shift">
+					<li>According to chart, a weighted average of <b>80.75%</b> required on rest of material</li>
+					<li>0.95 * <mark>24%</mark> + 0.65 * <mark>33.33%</mark> + 1.0 * <mark>10%</mark> = <b>54.46%</b></li>
+					<li>54.46% (earned) / 67.33% (possibly earned) = <b>80.88%</b></li>
+				</ul>
+				<br>
+				<b>Case 2:</b><br>
+				The second student, Yoru, is confident on getting full marks on the rest of the PAs. Yoru is lazy and wants to skip the mini project. He is also aiming for a B- in the class. Yoru finds that he will need to average 92% on the rest of the exams to do so.<br>
+				<br>
+				<b>Case 3:</b><br>
+				The third student, Reyna, is doing pass-fail and just wants a D-. Reyna is confident she will get full marks on the rest of the PAs and the mini project. She has several parties to attend and does not want to study for exams. Reyna finds that she will need to average 2% on the rest of exams to pass the class.
+				<br>
+			</div>
+			<div class = "vid2">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/UH-9I12E8cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<br>
+		<div class = "deletion">
+			<div class = "vid1">
+				<iframe width="728" height="410" src="https://www.youtube.com/embed/KttE7fOjOhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class = "how_work4">
+				<div class = "text">Deletion and Custom Cut-offs</div>
+				Custom grades can be entered as well as shown in the demonstration.<br><br>
+				You can delete the following individual values:
+				<ul class = "shift">
+					<li>Categories</li>
+					<li>Work Completed So Far</li>
+					<li>Grade Cut-Offs</li>
+				</ul>
+				<br>If you want to delete several of these, it may be more convenient to just clear everything by using the clear all button.
 			</div>
 		</div>
 	</body>
