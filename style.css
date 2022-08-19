@@ -49,6 +49,8 @@
 	color: #fff;
 	font-size: 35px;
 	font-weight: 600;
+	left: -25%;
+	position: relative;
 }
 
 .navbar .menu li{
@@ -61,6 +63,8 @@
 	font-size: 18px;
 	font-weight: 500;
 	margin-left: 25px;
+	right: -25%;
+	position: relative;
 }
 
 
@@ -230,7 +234,7 @@
 	}
 	.navbar .logo a{
 		color: #fff;
-		font-size: 10px;
+		font-size: 18px;
 		font-weight: 600;
 	}
 	.navbar .menu li a{
